@@ -10,6 +10,7 @@ Jinja2==2.9.6
 MarkupSafe==1.0
 numexpr==2.6.2
 numpy==1.12.1
+opencv-python==3.2.0.7
 packaging==16.8
 pandas==0.18.0
 protobuf==3.2.0
@@ -30,8 +31,6 @@ SQLAlchemy==1.0.11
 statsmodels==0.6.1
 sympy==0.7.6.1
 tables==3.2.2
-tensorflow==1.1.0
-tensorflow-gpu==1.1.0
 terminado==0.5
 toolz==0.7.4
 tornado==4.3
