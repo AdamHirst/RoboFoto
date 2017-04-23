@@ -2,13 +2,14 @@ from flask import Flask, jsonify, request
 import base64
 from PIL import Image, ImageFilter
 import io
+import WulfricMagic
 
 app = Flask(__name__)
 
 #The final image transformation
 def transformImage(im, category):
 
-	im = im.rotate(45)
+	im = WulfricMagic.Magic(im)
 
 	return im
 
@@ -28,7 +29,7 @@ def getImage():
 	im = Image.open(io.BytesIO(im))
 
 	#Runs the single transform
-	im = transformImage(im)
+	im = transformImage(im,currentCategory)
 
 	#Image to bytes file
 	in_mem_file = io.BytesIO()
