@@ -58,7 +58,7 @@ def crop_rotated (angle, image, image_original):
 def Magic(im):
     #init
     crop_iterations = 500
-    initial_crop_limit = 0.25
+    initial_crop_limit = 0.4
     crop_step_size = 0.05
     crop_min_restriction = 0.40
      
