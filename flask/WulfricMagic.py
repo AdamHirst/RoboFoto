@@ -106,8 +106,8 @@ def Magic(im):
     image = raw_image.crop([(crop[0])*raw_image.size[0],(crop[1])*raw_image.size[1],raw_image.size[0]-(crop[2])*raw_image.size[0],raw_image.size[1]-(crop[3])*raw_image.size[1]])
     image = image.resize([256,256],Image.ANTIALIAS)
      
-    rotation = (random()-0.5)*100
-    lastrotation = (random()-0.5)*10
+    rotation = 0
+    lastrotation = 0
     rotdir = 1
      
     for i in range (1,rotation_iterations):
